@@ -1,3 +1,15 @@
-print(f"Hello! I have an cute story about a Teacup Piglet.  I am excited to tell it!  ")
+print(f"Hello! I have a cute story about a Teacup Piglet.  I am excited to tell it!  ")
 print(f"Before the story gets started, I have several questions for you to answer. ")
+print(f"After typing your answer, please be sure to press the enter key. ")
+input(f"\nPress the enter key to continue... ")
 
+pigletName = input("\nWhat is the Teacup Piglet's name? ")
+room = input("\nWhat room is the Teacup Piglet's pen in? ")
+toy = input("\nWhat is the Teacup Piglet's favorite toy? ")
+nap = input("\nHow long is the Teacup Piglet's nap? ")
+yourName = input("\nWhat is your name? ")
+
+print(f"\nLet's go!! ")
+print(f"Once there was a beautiful Teacup Piglet named {pigletName}. ")
+print(f"The piglet was taking a {nap} nap and wants to get free from it's pen. ")
+print(f"{pigletName} notices it's pen is open. Here is the chance to be mischievious! ")
