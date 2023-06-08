@@ -3,22 +3,27 @@ print(f"Before the story gets started, I have several questions for you to answe
 print(f"After typing your answer, please be sure to press the enter key. ")
 input(f"\nPress the enter key to continue... ")
 
-keepPlaying = "y"
+keepPlaying = "y" 
 while keepPlaying.lower() == "y":
 
     pigletName = input("\nWhat is the Teacup Piglet's name? ")
+    
     while len(pigletName) == 0:
         pigletName = input(f"Please enter a name:  ")
     room = input("\nWhat room is the Teacup Piglet's pen in? ")
+    
     while len(room) == 0:
         room = input(f"Please enter a room: ")
     toy = input("\nWhat is the Teacup Piglet's favorite toy? ")
+    
     while len(toy) == 0:
         toy = input(f"Please enter a toy: ")
     nap = input("\nHow many minutes is the Teacup Piglet's nap? ")
+    
     while not nap.isdigit():
         nap = input(f"Value not recognized. Please enter a numeric value: ")
     yourName = input("\nWhat is your name? ")
+    
     while len(yourName) == 0:
         yourName = input(f"Please enter your name: ")
 
@@ -67,6 +72,6 @@ while keepPlaying.lower() == "y":
         print(f"\n{yourName} places {pigletName} into it's pen for bedtime.")
     print("\nThe End")
     
-    keepPlaying = input(f"\nDo you want to play again? Enter yes or no:  ")
-    while keepPlaying.lower() != "yes" and keepPlaying.lower() != "no":
-        keepPlaying = input(f"Please type yes or no:  ")
+    keepPlaying = input("Do you want to play again? Enter y or n:  ")
+    while keepPlaying.lower() not in ["y", "n"]:
+        keepPlaying = input("Please type y or n:  ")
